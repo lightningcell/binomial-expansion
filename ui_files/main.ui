@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Window</class>
+ <widget class="QWidget" name="Window">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>640</width>
+    <height>388</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>640</width>
+    <height>480</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Binomial Expansion</string>
+  </property>
+  <property name="windowFilePath">
+   <string/>
+  </property>
+  <layout class="QHBoxLayout" name="horizontalLayout">
+   <item>
+    <widget class="QTabWidget" name="tab_widget">
+     <property name="font">
+      <font>
+       <family>Monospac821 BT</family>
+       <pointsize>10</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="cursor">
+      <cursorShape>ArrowCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QTabBar::tab {
+            border: 1px solid white;
+            background-color: gray;
+            color: #fff;
+            padding: 6px;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+			cursor: pointing-hand;
+}
+
+QTabBar::tab:selected {
+	background: white;
+	color: black;
+	border: 1px solid gray;
+}</string>
+     </property>
+     <property name="currentIndex">
+      <number>0</number>
+     </property>
+     <property name="movable">
+      <bool>true</bool>
+     </property>
+     <widget class="QWidget" name="tab_term_creator">
+      <property name="cursor">
+       <cursorShape>ArrowCursor</cursorShape>
+      </property>
+      <attribute name="title">
+       <string>Term Creator</string>
+      </attribute>
+      <layout class="QVBoxLayout" name="verticalLayout_2" stretch="40,40,0,20">
+       <item>
+        <layout class="QFormLayout" name="form_box1">
+         <item row="1" column="1">
+          <widget class="QDoubleSpinBox" name="spin_box_base">
+           <property name="toolTip">
+            <string>Base</string>
+           </property>
+           <property name="minimum">
+            <double>-100000000000000000000.000000000000000</double>
+           </property>
+           <property name="maximum">
+            <double>10000000000000000.000000000000000</double>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="0">
+          <widget class="QLabel" name="lbl_x2">
+           <property name="text">
+            <string>Unknown</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="1">
+          <widget class="QLineEdit" name="line_edit_unknown">
+           <property name="toolTip">
+            <string>Unknown</string>
+           </property>
+          </widget>
+         </item>
+         <item row="4" column="0">
+          <widget class="QLabel" name="lbl_x3">
+           <property name="text">
+            <string>Exponent</string>
+           </property>
+          </widget>
+         </item>
+         <item row="6" column="1">
+          <widget class="QPushButton" name="btn_create">
+           <property name="toolTip">
+            <string>Create</string>
+           </property>
+           <property name="text">
+            <string>Create</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <widget class="QLabel" name="lbl_x1">
+           <property name="text">
+            <string>Base</string>
+           </property>
+          </widget>
+         </item>
+         <item row="4" column="1">
+          <widget class="QSpinBox" name="spin_box_exponent">
+           <property name="toolTip">
+            <string>Exponent</string>
+           </property>
+           <property name="minimum">
+            <number>-999999999</number>
+           </property>
+           <property name="maximum">
+            <number>999999999</number>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="hbox2" stretch="0,0">
+         <item>
+          <widget class="QLineEdit" name="line_edit_term">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Maximum" vsizetype="Maximum">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>400</width>
+             <height>120</height>
+            </size>
+           </property>
+           <property name="sizeIncrement">
+            <size>
+             <width>60</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="baseSize">
+            <size>
+             <width>0</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>12</pointsize>
+            </font>
+           </property>
+           <property name="toolTip">
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-family:'Courier New'; font-weight:600; font-style:italic; color:#645e75;&quot;&gt;Legends say it's still in development&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600; font-style:italic; text-decoration: underline; color:#2a00fe;&quot;&gt;You can create AlphaTerm like this:&lt;/span&gt;&lt;/p&gt;&lt;p&gt;* 2x &lt;span style=&quot; font-weight:600; color:#31ff31;&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;2.0x&lt;/span&gt;&lt;span style=&quot; font-weight:600; vertical-align:super;&quot;&gt;1&lt;/span&gt;&lt;/p&gt;&lt;p&gt;* 3(y^2)&lt;span style=&quot; font-weight:600; color:#31ff31;&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;3.0y&lt;/span&gt;&lt;span style=&quot; font-weight:600; vertical-align:super;&quot;&gt;2&lt;/span&gt;&lt;/p&gt;&lt;p&gt;* 5z^2 &lt;span style=&quot; font-weight:600; color:#31ff31;&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;5.0z&lt;/span&gt;&lt;span style=&quot; font-weight:600; vertical-align:super;&quot;&gt;2&lt;/span&gt;&lt;/p&gt;&lt;p&gt;* (4f)^4 &lt;span style=&quot; font-weight:600; color:#31ff31;&quot;&gt;-&amp;gt; &lt;/span&gt;&lt;span style=&quot; font-weight:600; color:#000000;&quot;&gt;256&lt;/span&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;.0f&lt;/span&gt;&lt;span style=&quot; font-weight:600; vertical-align:super;&quot;&gt;4&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600; font-style:italic; text-decoration: underline; color:#2a00fe;&quot;&gt;Also you can create MultipleAlphaTerm:&lt;/span&gt;&lt;/p&gt;&lt;p&gt;* 2x3(y^2)(4f)^4 &lt;span style=&quot; font-weight:600; color:#31ff31;&quot;&gt;-&amp;gt; &lt;/span&gt;&lt;span style=&quot; font-weight:600; color:#000000;&quot;&gt;1536&lt;/span&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;.0x&lt;/span&gt;&lt;span style=&quot; font-weight:600; vertical-align:super;&quot;&gt;1&lt;/span&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;y&lt;/span&gt;&lt;span style=&quot; font-weight:600; vertical-align:super;&quot;&gt;2&lt;/span&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;f&lt;/span&gt;&lt;span style=&quot; font-weight:600; vertical-align:super;&quot;&gt;4&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+           </property>
+           <property name="placeholderText">
+            <string>You can write the term in a regular way.</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="btn_generate">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Maximum" vsizetype="Maximum">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>160</width>
+             <height>120</height>
+            </size>
+           </property>
+           <property name="toolTip">
+            <string>Generate</string>
+           </property>
+           <property name="text">
+            <string>Generate</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <widget class="QLabel" name="lbl_x7">
+         <property name="toolTip">
+          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Whattttt&lt;/span&gt;&lt;span style=&quot; font-size:12pt; color:#2a00fe;&quot;&gt;😂😂😂😂&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         </property>
+         <property name="text">
+          <string>Hover your mouse over objects and see interesting clues ! Maybe there are some hidden treasures.</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="verticalSpacer">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>40</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="tab_binomial_expansion">
+      <attribute name="title">
+       <string>Binomial Expansion</string>
+      </attribute>
+      <layout class="QHBoxLayout" name="horizontalLayout_3">
+       <item>
+        <layout class="QGridLayout" name="grid_box1">
+         <item row="0" column="0">
+          <widget class="QLabel" name="lbl_x4">
+           <property name="text">
+            <string>Term 1:</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QComboBox" name="term1_combo_box"/>
+         </item>
+         <item row="1" column="0">
+          <widget class="QLabel" name="lbl_x5">
+           <property name="text">
+            <string>Term 2:</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="1">
+          <widget class="QComboBox" name="term2_combo_box"/>
+         </item>
+         <item row="2" column="0">
+          <widget class="QLabel" name="lbl_x6">
+           <property name="text">
+            <string>Exponent</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="1">
+          <widget class="QSpinBox" name="spin_box_exponent_binom"/>
+         </item>
+         <item row="3" column="0" colspan="2">
+          <widget class="QPushButton" name="btn_calculate">
+           <property name="text">
+            <string>Calculate</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_4">
+         <property name="text">
+          <string>You will see the result in here</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="tab">
+      <attribute name="title">
+       <string>Created Terms</string>
+      </attribute>
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <item>
+        <widget class="QScrollArea" name="scrollArea">
+         <property name="widgetResizable">
+          <bool>true</bool>
+         </property>
+         <widget class="QWidget" name="scrollAreaWidgetContents">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>581</width>
+            <height>303</height>
+           </rect>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_3" stretch="0">
+           <item>
+            <layout class="QVBoxLayout" name="scroll_vbox">
+             <property name="topMargin">
+              <number>0</number>
+             </property>
+             <property name="bottomMargin">
+              <number>250</number>
+             </property>
+            </layout>
+           </item>
+          </layout>
+         </widget>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLabel" name="label">
+     <property name="toolTip">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt; color:#ffbd52;&quot;&gt;You got me! It is not easy to find this hidden text.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt; color:#0cff00;&quot;&gt;Take screenshot and contact me:&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt; color:#ff0004;&quot;&gt;Gmail:&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt; color:#2a00fe;&quot;&gt;hamidsimsek4457@gmail.com&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
