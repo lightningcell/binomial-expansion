@@ -7,7 +7,7 @@ class MessageBox(QDialog):
         super(MessageBox, self).__init__()
         self.setWindowTitle("Message")
 
-        self.setFixedSize(200, 100)
+        self.setFixedSize(300, 120)
         self.setWindowIcon(QIcon("./media/message.png"))
 
         v_box = QVBoxLayout(self)

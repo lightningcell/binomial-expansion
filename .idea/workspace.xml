@@ -23,7 +23,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2c5acfa0-a1e2-447e-94d3-f61283733704" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/widgets/message_widget.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/binomial_expansion.py" beforeDir="false" afterPath="$PROJECT_DIR$/binomial_expansion.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/converted_ui_files/mainwindow.py" beforeDir="false" afterPath="$PROJECT_DIR$/converted_ui_files/mainwindow.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/converted_ui_files/tedwidget.py" beforeDir="false" afterPath="$PROJECT_DIR$/converted_ui_files/tedwidget.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/converted_ui_files/termwidget.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/functions.py" beforeDir="false" afterPath="$PROJECT_DIR$/functions.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui_files/main.ui" beforeDir="false" afterPath="$PROJECT_DIR$/ui_files/main.ui" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui_files/term_exists_dialog.ui" beforeDir="false" afterPath="$PROJECT_DIR$/ui_files/term_exists_dialog.ui" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui_files/term_widget.ui" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/widgets/message_widget.py" beforeDir="false" afterPath="$PROJECT_DIR$/widgets/message_widget.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/widgets/term_widget.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,7 +76,7 @@
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/acer/Desktop/sscell57/software/python_projeleri/binomial-expansion/ui_files&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/acer/Desktop/sscell57/software/python_projeleri/unknown_numbers&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -196,10 +207,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python.app" />
+        <item itemvalue="Python.binomial_expansion" />
         <item itemvalue="Python.message_widget" />
         <item itemvalue="Python.term_widget" />
         <item itemvalue="Python.termdirector" />
-        <item itemvalue="Python.binomial_expansion" />
       </list>
     </recent_temporary>
   </component>
@@ -216,7 +227,9 @@
       <updated>1669663755516</updated>
       <workItem from="1677844580624" duration="1588000" />
       <workItem from="1677848576630" duration="8612000" />
-      <workItem from="1677864830172" duration="5959000" />
+      <workItem from="1677864830172" duration="6249000" />
+      <workItem from="1677924307634" duration="3053000" />
+      <workItem from="1677928492831" duration="7326000" />
     </task>
     <servers />
   </component>
@@ -235,9 +248,9 @@
     </option>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/binomial_expansion$binomial_expansion.coverage" NAME="binomial_expansion Coverage Results" MODIFIED="1677850605243" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/binomial_expansion$binomial_expansion.coverage" NAME="binomial_expansion Coverage Results" MODIFIED="1677934927429" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/binomial_expansion$termdirector.coverage" NAME="termdirector Coverage Results" MODIFIED="1677854867945" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/binomial_expansion$app.coverage" NAME="app Coverage Results" MODIFIED="1677871431969" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/binomial_expansion$app.coverage" NAME="app Coverage Results" MODIFIED="1677935858439" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/binomial_expansion$term_widget.coverage" NAME="term_widget Coverage Results" MODIFIED="1677856216354" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/widgets" />
     <SUITE FILE_PATH="coverage/binomial_expansion$message_widget.coverage" NAME="message_widget Coverage Results" MODIFIED="1677869988779" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/widgets" />
   </component>

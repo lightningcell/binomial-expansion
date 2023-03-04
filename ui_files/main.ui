@@ -7,19 +7,25 @@
     <x>0</x>
     <y>0</y>
     <width>640</width>
-    <height>388</height>
+    <height>480</height>
    </rect>
   </property>
   <property name="sizePolicy">
-   <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
     <horstretch>0</horstretch>
     <verstretch>0</verstretch>
    </sizepolicy>
   </property>
+  <property name="minimumSize">
+   <size>
+    <width>620</width>
+    <height>460</height>
+   </size>
+  </property>
   <property name="maximumSize">
    <size>
-    <width>640</width>
-    <height>480</height>
+    <width>660</width>
+    <height>500</height>
    </size>
   </property>
   <property name="windowTitle">
@@ -238,7 +244,7 @@ QTabBar::tab:selected {
       <attribute name="title">
        <string>Binomial Expansion</string>
       </attribute>
-      <layout class="QHBoxLayout" name="horizontalLayout_3">
+      <layout class="QHBoxLayout" name="horizontalLayout_3" stretch="4,6">
        <item>
         <layout class="QGridLayout" name="grid_box1">
          <item row="0" column="0">
@@ -249,7 +255,11 @@ QTabBar::tab:selected {
           </widget>
          </item>
          <item row="0" column="1">
-          <widget class="QComboBox" name="term1_combo_box"/>
+          <widget class="QComboBox" name="term1_combo_box">
+           <property name="editable">
+            <bool>true</bool>
+           </property>
+          </widget>
          </item>
          <item row="1" column="0">
           <widget class="QLabel" name="lbl_x5">
@@ -259,7 +269,11 @@ QTabBar::tab:selected {
           </widget>
          </item>
          <item row="1" column="1">
-          <widget class="QComboBox" name="term2_combo_box"/>
+          <widget class="QComboBox" name="term2_combo_box">
+           <property name="editable">
+            <bool>true</bool>
+           </property>
+          </widget>
          </item>
          <item row="2" column="0">
           <widget class="QLabel" name="lbl_x6">
@@ -269,7 +283,14 @@ QTabBar::tab:selected {
           </widget>
          </item>
          <item row="2" column="1">
-          <widget class="QSpinBox" name="spin_box_exponent_binom"/>
+          <widget class="QSpinBox" name="spin_box_exponent_binom">
+           <property name="minimum">
+            <number>-999999999</number>
+           </property>
+           <property name="maximum">
+            <number>999999999</number>
+           </property>
+          </widget>
          </item>
          <item row="3" column="0" colspan="2">
           <widget class="QPushButton" name="btn_calculate">
@@ -281,49 +302,68 @@ QTabBar::tab:selected {
         </layout>
        </item>
        <item>
-        <widget class="QLabel" name="label_4">
-         <property name="text">
-          <string>You will see the result in here</string>
+        <widget class="QTextEdit" name="result_text">
+         <property name="enabled">
+          <bool>true</bool>
          </property>
-         <property name="alignment">
-          <set>Qt::AlignCenter</set>
+         <property name="textInteractionFlags">
+          <set>Qt::TextSelectableByKeyboard|Qt::TextSelectableByMouse</set>
+         </property>
+         <property name="placeholderText">
+          <string>Result...</string>
          </property>
         </widget>
        </item>
       </layout>
      </widget>
-     <widget class="QWidget" name="tab">
+     <widget class="QWidget" name="tab_created_terms">
       <attribute name="title">
        <string>Created Terms</string>
       </attribute>
-      <layout class="QVBoxLayout" name="verticalLayout">
+      <layout class="QHBoxLayout" name="horizontalLayout_2">
        <item>
-        <widget class="QScrollArea" name="scrollArea">
-         <property name="widgetResizable">
-          <bool>true</bool>
+        <widget class="QTableWidget" name="terms_table">
+         <property name="styleSheet">
+          <string notr="true">QTableView {
+	font: 63 10pt &quot;Segoe UI Semibold&quot;;
+    selection-background-color: aqua;
+}</string>
          </property>
-         <widget class="QWidget" name="scrollAreaWidgetContents">
-          <property name="geometry">
-           <rect>
-            <x>0</x>
-            <y>0</y>
-            <width>581</width>
-            <height>303</height>
-           </rect>
+         <property name="autoScroll">
+          <bool>false</bool>
+         </property>
+         <property name="autoScrollMargin">
+          <number>16</number>
+         </property>
+         <property name="editTriggers">
+          <set>QAbstractItemView::NoEditTriggers</set>
+         </property>
+         <property name="horizontalScrollMode">
+          <enum>QAbstractItemView::ScrollPerItem</enum>
+         </property>
+         <property name="gridStyle">
+          <enum>Qt::DashDotDotLine</enum>
+         </property>
+         <column>
+          <property name="text">
+           <string>TERMS</string>
           </property>
-          <layout class="QVBoxLayout" name="verticalLayout_3" stretch="0">
-           <item>
-            <layout class="QVBoxLayout" name="scroll_vbox">
-             <property name="topMargin">
-              <number>0</number>
-             </property>
-             <property name="bottomMargin">
-              <number>250</number>
-             </property>
-            </layout>
-           </item>
-          </layout>
-         </widget>
+         </column>
+         <column>
+          <property name="text">
+           <string>BASE</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>UNKNOWN</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>EXPONENT</string>
+          </property>
+         </column>
         </widget>
        </item>
       </layout>
