@@ -27,7 +27,7 @@ def binomial_expansion(term1, term2, exponent) -> str:
         ty = term2 ** i
         main_term = comb * tx * ty
 
-        if i == 0 or main_term.get_coefficient() == 0:
+        if (i == 0 and main_term.get_coefficient() > 0) or main_term.get_coefficient() == 0:
             with_sign = False
         else:
             with_sign = True
@@ -35,6 +35,6 @@ def binomial_expansion(term1, term2, exponent) -> str:
         equation += TermPrinter.print(main_term, with_sign, 1)
 
     if not is_exponent_negative:
-        return equation
+        return equation.strip()
     else:
-        return f"({equation}){TermPrinter.get_printable_exponent(-1, False)}"
+        return f"({equation.strip()}){TermPrinter.get_printable_exponent(-1, False)}"

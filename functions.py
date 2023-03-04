@@ -33,8 +33,8 @@ def compare_alpha_term(term1: AlphaTerm, term2: AlphaTerm):
 
 def compare_multiple_alpha_term(term1: MultipleAlphaTerm, term2: MultipleAlphaTerm):
     if len(term1.terms) == len(term2.terms):
-        alphas1 = sorted({t.get_alpha(): t.get_exponent for t in term1.terms})
-        alphas2 = sorted({t.get_alpha(): t.get_exponent for t in term2.terms})
+        alphas1 = {t.get_alpha(): t.get_exponent for t in term1.terms}
+        alphas2 = {t.get_alpha(): t.get_exponent for t in term2.terms}
 
         if len(set(alphas1.keys()).union(alphas2.keys())) > len(alphas1):
             return None
